@@ -39,7 +39,7 @@ try:
         # Convertir la chaîne JSON en liste
         liste_recue = json.loads(donnees_recues)
         print("Liste reçue :", liste_recue)
-        uri = 'mongodb+srv://konanruthemmanuelle:12345abc@cluster0.vstygr9.mongodb.net/?retryWrites=true&w=majority'
+        uri = 'mongodb+'
         # Create a new client and connect to the server
         client = MongoClient(uri)
         # Send a ping to confirm a successful connection
