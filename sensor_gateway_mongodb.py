@@ -46,7 +46,7 @@ try:
         try:
             date_create=datetime.now()
             db = client['db_sensor']  # Replace 'your_database_name' with your actual database name
-            collection = db['db_sensor_final']
+          
             collection.insert_one({
             "time": liste_recue[0],
             "distance": liste_recue[1],
@@ -56,33 +56,7 @@ try:
         except Exception as e:
             print(e)
 
-        # Afficher la liste reçue
         
-                
-        # CONNECTION = "postgres://tsdbadmin:m01w7odv95pecxxs@ghg7xh4dph.gekjrogvk3.tsdb.cloud.timescale.com:34785/tsdb?sslmode=require"
-        # with psycopg2.connect(CONNECTION) as conn:
-        #     c = conn.cursor()
-
-          
-                                        
-        #     c.execute("""
-        # CREATE TABLE IF NOT EXISTS sensor_not (
-        #     id SERIAL PRIMARY KEY,
-        #     time FLOAT,
-        #     distance FLOAT,
-        #     notification FLOAT,
-        #     date_create TIMESTAMPTZ ,
-        #     FOREIGN KEY (id) REFERENCES sensors (id)
-            
-        # );
-        # """)
-        #     conn.commit()
-        #     d= {"time":liste_recue[0],"distance":liste_recue[1],"notification":liste_recue[2]}
-        #     c.execute("""
-        #     INSERT INTO sensor_not(time,distance,notification) VALUES (%(time)s,%(distance)s,%(notification)s)""",d)
-        #     conn.commit()
-        #     # conn.close()
-        # print("11111111111111111")
 
        
 except KeyboardInterrupt:
