@@ -17,7 +17,6 @@ Pi, which collects the data and sends it to an interactive dashboard for visuali
 ### Development: Python (Flask, TensorFlow, NumPy)
 ### Database: MongoDB
 ### Machine Learning: LSTM (Long Short-Term Memory) Neural Networks
-### Dashboard: Flask, HTML/CSS, JavaScript
 
 ## ⚙️ How It Works
 ### 1️⃣ Data Collection
@@ -28,14 +27,6 @@ The Raspberry Pi records the data and sends it to MongoDB
 
 An LSTM neural network model analyzes the movement data
 It distinguishes the owner of the office from visitors
-### 3️⃣ Data Visualization
-
-Results are displayed on an interactive dashboard
-The user can view presence and identification statistics
-📊 Use Cases
-🔹 Office or restricted space monitoring
-🔹 Automatic identification of individuals based on their movements
-🔹 Real-time visualization of entries and exits
 
 ## 🚀 Conclusion
 The Smart Detection System using Sensors is an innovative solution combining IoT, artificial intelligence, and real-time data processing.
